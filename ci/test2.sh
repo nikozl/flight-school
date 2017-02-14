@@ -1,3 +1,0 @@
-#! /bin/bash
-
-echo "PRUEBA EJECUTAR SEGUNDO SCRIPT"
