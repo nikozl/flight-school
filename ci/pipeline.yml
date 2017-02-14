@@ -2,7 +2,7 @@ resources:
 - name: flight-school
   type: git
   source:
-    uri: https://github.com/nikozl/alien/flight-school 
+    uri: https://github.com/nikozl/flight-school 
     branch: master
 
 jobs:
