@@ -11,3 +11,6 @@ inputs:
 
 run:
   path: ./flight-school/ci/test1.sh
+
+run:
+  path: ./flight-school/ci/test2.sh
