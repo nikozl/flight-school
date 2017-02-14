@@ -1,0 +1,8 @@
+example_id                      | status | run_time        |
+------------------------------- | ------ | --------------- |
+./spec/integration_spec.rb[1:1] | passed | 0.03121 seconds |
+./spec/radar_spec.rb[1:1:1]     | passed | 0.00398 seconds |
+./spec/radar_spec.rb[1:1:2]     | passed | 0.00217 seconds |
+./spec/radar_spec.rb[1:1:3]     | passed | 0.00218 seconds |
+./spec/radar_spec.rb[1:1:4]     | passed | 0.00218 seconds |
+./spec/radar_spec.rb[1:2:1]     | passed | 0.00616 seconds |
