@@ -7,7 +7,7 @@ image_resource:
     tag: 2.3.0
 
 inputs:
-- name: flight-school
+- name: tests
 
 run:
-  path: ./flight-school/ci/test1.sh
+  path: ./tests/ci/test1.sh

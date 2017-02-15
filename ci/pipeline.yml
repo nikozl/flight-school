@@ -1,14 +1,14 @@
 resources:
-- name: flight-school
+- name: git_test
   type: git
   source:
-    uri: https://github.com/nikozl/flight-school 
+    uri: https://github.com/nikozl/tests 
     branch: master
 
 jobs:
-- name: test-app
+- name: test-git
   plan:
-  - get: flight-school
+  - get: git_test
     trigger: true
-  - task: tests
-    file: flight-school/build.yml
+  - task: testeo
+    file: tests/build.yml
