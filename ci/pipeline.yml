@@ -5,6 +5,7 @@ resources:
     uri: https://github.com/nikozl/tests 
     branch: master
 
+
 jobs:
 - name: test-git
   plan:
@@ -12,3 +13,10 @@ jobs:
     trigger: true
   - task: testeo
     file: tests/build.yml
+
+- name: test-dos-git
+  plan:
+  - get: tests
+    trigger: true
+  - task: testeo-dos
+    file: tests/build2.yml
