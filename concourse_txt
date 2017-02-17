@@ -1,0 +1,27 @@
+#### Añadir a Vagrantfile ya que viene por defecto con el cable desconectado ####
+
+config.vm.provider :virtualbox do |v|
+  v.customize ["modifyvm", :id, "--cableconnected1", "on"]
+end
+
+
+
+#### COMANDOS UTILES ####
+
+*Iniciar conexion con la maquina:
+ fly -t ci login -c http://192.168.100.4:8080
+
+*Listar todas las conexiones:
+ fly targets
+
+*Cerrar todas las conexiones:
+ fly logout --all
+
+*Crear pipeline
+ fly -t ci set-pipeline -p hello -c navi-pipeline.yml
+
+*Borrar pipeline
+ fly -t ci destroy-pipeline --pipeline hello
+
+*Ejecutar codigo
+ fly -t ci execute -c build.yml

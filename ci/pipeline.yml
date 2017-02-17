@@ -18,5 +18,6 @@ jobs:
   plan:
   - get: tests
     trigger: true
+    passed: [test-git]
   - task: testeo-dos
     file: tests/build2.yml
