@@ -4,9 +4,9 @@ image_resource:
   type: docker-image
   source: {repository: ubuntu}
 
-outputs:
+inputs:
 - name: pipeline-code
 
 run:
-  path: echo
-  args: [job done!]
+  path: pipeline-code/scripts/update_files.sh
+
