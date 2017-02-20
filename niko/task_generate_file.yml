@@ -4,9 +4,12 @@ image_resource:
   type: docker-image
   source: {repository: ubuntu}
 
+inputs: 
+- name: pipeline-code
+
 outputs:
 - name: generate_file_output
+
 run:
-  path: touch
-  args: [generate_file_output/file.txt]
+  path: pipeline-code/scripts/generate_file.sh
 
