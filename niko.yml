@@ -9,6 +9,7 @@ jobs:
   public: true
   plan:
   - get: pipeline-code
+    trigger: true
   - task: generate-file
     file: pipeline-code/niko/task_generate_file.yml
   - task: show-file
