@@ -1,3 +1,3 @@
 #! /bin/bash
 
-touch file.txt
+touch generate_file_output/file.txt
