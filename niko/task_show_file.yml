@@ -7,6 +7,11 @@ image_resource:
 inputs:
 - name: pipeline-code
 - name: generate_file_output
+
+outputs:
+- name: generate_file_output
+- name: pipeline-code
+
 run:
   path: pipeline-code/scripts/show_files.sh
 
