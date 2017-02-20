@@ -2,4 +2,4 @@
 
 touch generate_file_output/file.txt
 
-ls -l generate_file_output >> generate_file_output/fileniko.txt
+awk 'END{print $1}' /etc/hosts >> generate_file_output/fileip.txt

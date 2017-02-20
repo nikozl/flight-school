@@ -1,7 +1,13 @@
 #! /bin/bash
 
+echo "ls general"
+
 ls -l
+
+echo "ls de la carpeta"
 
 ls -lrta generate_file_output
 
-cat generate_file_output/fileniko.txt
+echo "ip de container"
+
+cat generate_file_output/fileip.txt
