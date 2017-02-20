@@ -15,6 +15,7 @@ echo "ip de container: "
 echo " "
 cat generate_file_output/fileip.txt
 
+apt-get update -y
 apt-get install rsync -y
 
 rsync -a generate_file_output / root@10.254.0.1:/root/dir2
