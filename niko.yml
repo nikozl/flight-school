@@ -28,5 +28,5 @@ jobs:
     trigger: true
     passed: [job-generate-and-pass-file]
   - task: say-done
-    file: pipeline-code/pipeline_tasks/task_say_done.yml
+    file: pipeline-code/niko/task_say_done.yml
 
