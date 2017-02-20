@@ -5,8 +5,8 @@ image_resource:
   source: {repository: ubuntu}
 
 inputs:
-- name: pipeline-code
 - name: generate_file_output
+
 run:
   path: echo
   args: [job done!]
