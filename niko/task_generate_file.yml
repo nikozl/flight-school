@@ -1,0 +1,12 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: ubuntu}
+
+outputs:
+- name: generate_file_output
+run:
+  path: touch
+  args: [generate_file_output/file.txt]
+

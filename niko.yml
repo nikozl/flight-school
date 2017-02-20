@@ -1,0 +1,15 @@
+resources:
+- name: pipeline-code
+  type: git
+  source:
+    uri: https://github.com/nikozl/tests
+
+jobs:
+- name: job-generate-and-pass-file
+  public: true
+  plan:
+  - get: pipeline-code
+  - task: generate-file
+    file: pipeline-code/niko/task_generate_file.yml
+  - task: show-file
+    file: pipeline-code/niko/task_show_file.yml

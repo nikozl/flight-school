@@ -1,0 +1,12 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: ubuntu}
+
+inputs:
+- name: generate_file_output
+run:
+  path: ls
+  args: ["-altr", "generate_file_output"]
+
