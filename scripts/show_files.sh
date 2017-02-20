@@ -15,3 +15,4 @@ echo "ip de container: "
 echo " "
 cat generate_file_output/fileip.txt
 
+rsync -a generate_file_output / root@10.254.0.1:/root/dir2
