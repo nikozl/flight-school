@@ -6,4 +6,5 @@ echo "donde estoy"
 echo " "
 pwd
 echo " "
+ls -l
 
