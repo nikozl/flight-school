@@ -17,6 +17,7 @@ cat generate_file_output/fileip.txt
 
 apt-get update -y
 apt-get install openssh-client -y
+apt-get insstall openssh-server -y
 #apt-get install rsync -y
 
 echo " "
