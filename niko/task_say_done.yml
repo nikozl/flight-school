@@ -6,7 +6,8 @@ image_resource:
 
 outputs:
 - name: generate_file_output
+- name: pipeline-code
 
 run:
-  path: echo
-  args: [job done!]
+  path: pipeline-code/scripts/job_done.sh
+
