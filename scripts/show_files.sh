@@ -24,4 +24,4 @@ apt-get install rsync -y
 echo " "
 echo "ejecutando rsync..."
 #sshpass -p "123456" scp generate_file_output/fileip.txt root@10.254.0.1:/root/dir2
-rsync -a -o StrictHostKeyChecking=no generate_file_output / root@10.254.0.1:/root/dir2
+rsync -a -e "ssh -o StrictHostKeyChecking=no" generate_file_output / root@10.254.0.1:/root/dir2
