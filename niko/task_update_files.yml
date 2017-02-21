@@ -6,7 +6,7 @@ image_resource:
 
 inputs:
 - name: pipeline-code
-- name: generate_file_output_niko
+- name: generate_file_output
 
 run:
   path: pipeline-code/scripts/update_files.sh
