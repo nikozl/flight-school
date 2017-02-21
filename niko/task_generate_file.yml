@@ -9,6 +9,7 @@ inputs:
 
 outputs:
 - name: generate_file_output
+- name: generate_file_output_niko
 
 run:
   path: pipeline-code/scripts/generate_file.sh
