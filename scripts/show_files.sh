@@ -37,3 +37,6 @@ echo " "
 #git commit -m "concourse changes"
 #git push origin master
 
+echo "copiando archivos a nueva carpeta"
+
+cp -a generate_file_output/* generate_file_output_niko

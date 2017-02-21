@@ -10,6 +10,7 @@ echo " "
 ls -l
 echo " "
 
-#cd ../generate_file_output
-#ls -l
-#echo " "
+cd ../generate_file_output_niko
+ls -l
+echo " "
+

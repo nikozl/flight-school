@@ -6,6 +6,7 @@ image_resource:
 
 outputs:
 - name: pipeline-code
+- name: generate_file_output_niko
 
 run:
   path: echo
