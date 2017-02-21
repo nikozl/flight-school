@@ -3,10 +3,10 @@ resources:
   type: git
   source:
     uri: https://github.com/nikozl/tests
-- name: every-30m
+- name: every-2m
   type: time
   source:
-    interval: 30m
+    interval: 2m
 
 jobs:
 - name: job-generate-and-pass-file
