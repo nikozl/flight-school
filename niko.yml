@@ -38,4 +38,4 @@ jobs:
     trigger: true
     passed: [job-confirm]
   - task: update-files
-    file: pipeline-code/niko/task_update_files.yml
+    file: pipeline-code/niko/task_job_niko.yml

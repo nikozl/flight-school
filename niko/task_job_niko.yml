@@ -8,5 +8,5 @@ inputs:
 - name: pipeline-code
 
 run:
-  path: pipeline-code/scripts/update_files.sh
+  path: pipeline-code/scripts/job_niko.sh
 
