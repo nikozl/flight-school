@@ -29,11 +29,4 @@ echo "ejecutando rsync..."
 sshpass -p "123456" rsync -a -e "ssh -o StrictHostKeyChecking=no" ${donde_estoy}/ root@10.254.0.1:/root/dir2
 
 echo " "
-#echo "subir carpeta a git"
-#cd ${donde_estoy}
-#git clone https://github.com/nikozl/tests
-#mv generate_file_output tests
-#git add --all
-#git commit -m "concourse changes"
-#git push origin master
 
