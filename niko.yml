@@ -3,6 +3,7 @@ resources:
   type: git
   source:
     uri: https://github.com/nikozl/tests
+
 - name: every-20m
   type: time
   source:
