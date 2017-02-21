@@ -14,6 +14,8 @@ resources:
   source:
     uri: https://github.com/nikozl/tests
     branch: prueba
+  - put: generate_file_output
+    params: {repository: https://github.com/nikozl/tests}
 
 jobs:
 - name: job-generate-and-pass-file
