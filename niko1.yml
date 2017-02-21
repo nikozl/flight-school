@@ -13,6 +13,7 @@ resources:
   type: git
   source:
     uri: https://github.com/nikozl/tests
+    branch: prueba
 
 jobs:
 - name: job-generate-and-pass-file
@@ -40,8 +41,8 @@ jobs:
 - name: new-job
   public: true
   plan:
-  - get: pipeline-code
+  - get: prueba
     trigger: true
-    passed: [job-confirm]
+    passed: [job-generate-and-pass-file]
   - task: job-niko
     file: pipeline-code/niko/task_job_niko.yml
