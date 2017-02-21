@@ -9,6 +9,11 @@ resources:
   source:
     interval: 20m
 
+- name: prueba
+  type: git
+  source:
+    uri: https://github.com/nikozl/tests
+
 jobs:
 - name: job-generate-and-pass-file
   public: true
