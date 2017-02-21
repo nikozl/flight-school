@@ -14,7 +14,7 @@ jobs:
   plan:
   - get: pipeline-code
     trigger: true
-  - get: every-30m
+  - get: every-2m
     trigger: true
   - task: generate-file
     file: pipeline-code/niko/task_generate_file.yml
