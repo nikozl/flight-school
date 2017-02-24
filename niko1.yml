@@ -10,12 +10,9 @@ resources:
     interval: 20m
 
 - name: prueba
-  type: git
+  type: time
   source:
-    uri: https://github.com/nikozl/tests
-    branch: prueba
-  - put: generate_file_output
-    params: {repository: https://github.com/nikozl/tests}
+    interval: 100m
 
 jobs:
 - name: job-generate-and-pass-file
@@ -43,8 +40,9 @@ jobs:
 - name: new-job
   public: true
   plan:
-  - get: prueba
+  - get: pipeline-code
     trigger: true
     passed: [job-generate-and-pass-file]
   - task: job-niko
     file: pipeline-code/niko/task_job_niko.yml
+  - get: prueba
