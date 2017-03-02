@@ -1,3 +1,7 @@
+### Iniciamos maquina virtual con vagrant ###
+ vagrant init concourse/lite
+
+
 #### Añadir a Vagrantfile ya que viene por defecto con el cable desconectado ####
 
 config.vm.provider :virtualbox do |v|
