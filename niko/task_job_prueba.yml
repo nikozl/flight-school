@@ -1,0 +1,13 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: ubuntu}
+
+inputs:
+- name: pipeline-code
+- name: prueba
+
+run:
+  path: pipeline-code/scripts/job_prueba.sh
+
