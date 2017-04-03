@@ -22,9 +22,9 @@ jobs:
   - get: every-20m
     trigger: true
   - task: generate-file
-    file: pipeline-code/niko/task_generate_file.yml
+    file: pipeline-code/tasks/task_generate_file.yml
   - task: show-file
-    file: pipeline-code/niko/task_show_file.yml
+    file: pipeline-code/tasks/task_show_file.yml
 
 - name: job-confirm
   public: true
@@ -33,7 +33,7 @@ jobs:
     trigger: true
     passed: [job-generate-and-pass-file]
   - task: say-done
-    file: pipeline-code/niko/task_say_done.yml
+    file: pipeline-code/tasks/task_say_done.yml
 
 - name: new-job
   public: true
@@ -42,7 +42,7 @@ jobs:
     trigger: true
     passed: [job-generate-and-pass-file]
   - task: job-niko
-    file: pipeline-code/niko/task_job_niko.yml
+    file: pipeline-code/tasks/task_job_niko.yml
   - put: prueba
 
 - name: job-prueba
@@ -52,5 +52,5 @@ jobs:
     trigger: true
     passed: [new-job]
   - task: job-prueba
-    file: pipeline-code/niko/task_job_prueba.yml
+    file: pipeline-code/tasks/task_job_prueba.yml
 
