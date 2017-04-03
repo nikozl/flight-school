@@ -31,11 +31,11 @@ jobs:
   - task: say-done
     file: pipeline-code/tasks/task_say_done.yml
 
-- name: new-job
+- name: job-mail
   public: true
   plan:
   - get: pipeline-code
     trigger: true
     passed: [job-confirm]
   - task: job-niko
-    file: pipeline-code/tasks/task_job_niko.yml
+    file: pipeline-code/tasks/task_job_mail.yml

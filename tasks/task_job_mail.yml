@@ -2,11 +2,11 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: ubuntu}
+  source: {repository: elsdoerfer/exim-sender}
 
 inputs:
 - name: pipeline-code
 
 run:
-  path: pipeline-code/scripts/job_niko.sh
+  path: pipeline-code/scripts/job_mail.sh
 
