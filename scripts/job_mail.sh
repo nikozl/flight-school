@@ -12,9 +12,5 @@ echo " "
 ls -l
 echo " "
 
-hostname >> $(pwd)/hostname
-hostname -f >> $(pwd)/hostnamef
-
-cat $(pwd)/hostname
-cat $(pwd)/hostnamef
-
+ifconfig -a
+ip addr
