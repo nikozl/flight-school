@@ -5,5 +5,5 @@ set -x
 ls -lrtha
 donde=$(pwd)
 cd /usr/bin/
-
-./mkosi -C ${donde}/tests/mkosi_build/repo
+cat mkosi
+#./mkosi -C ${donde}/tests/mkosi_build/repo
