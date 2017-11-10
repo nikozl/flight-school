@@ -8,5 +8,5 @@ inputs:
  -name: tests
 
 run:
-  path: ./tests/mkosi_build.sh
+  path: tests/mkosi_build.sh
 
