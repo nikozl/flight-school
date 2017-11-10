@@ -1,4 +1,6 @@
 #! /bin/bash
+set -e
+set -x
 
 ls -lrtha
 donde=$pwd
