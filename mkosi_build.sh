@@ -3,5 +3,8 @@
 ls -lrtha
 
 mkdir -p mkosi_build
+ls -lrtha
 
-./mkosi -C tests/mkosi_build/repo
+find / -name mkosi
+
+#./mkosi -C tests/mkosi_build/repo
