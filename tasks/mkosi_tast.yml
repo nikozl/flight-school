@@ -5,7 +5,7 @@ image_resource:
   source: {repository: 42bv/mkosi, privileged: true}
   
 inputs:
- -name: tests
+- name: tests
 
 run:
   path: tests/mkosi_build.sh
