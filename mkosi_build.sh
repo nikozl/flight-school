@@ -1,6 +1,7 @@
 #! /bin/bash
 
 ls -lrtha
+pwd
+cd /usr/bin/
 
-
-./usr/bin/mkosi -C tests/mkosi_build/repo
+#./mkosi -C tests/mkosi_build/repo
