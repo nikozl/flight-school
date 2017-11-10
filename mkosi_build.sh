@@ -1,7 +1,7 @@
 #! /bin/bash
 
 ls -lrtha
-pwd
+donde=$pwd
 cd /usr/bin/
 
-#./mkosi -C tests/mkosi_build/repo
+./mkosi -C ${donde}/tests/mkosi_build/repo
