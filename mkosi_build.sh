@@ -4,4 +4,4 @@ ls -lrtha
 
 mkdir -p mkosi_build
 
-mkosi --help
+./mkosi -C tests/mkosi_build/repo
