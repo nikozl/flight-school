@@ -6,5 +6,5 @@ ls -lrtha
 donde=$(pwd)
 #cd /usr/bin/
 #find / -name mkosi
-apt update -y
+yum update -y
 #mkosi -C ${donde}/tests/mkosi_build/repo
