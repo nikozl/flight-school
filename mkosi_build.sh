@@ -7,4 +7,4 @@ donde=$(pwd)
 #cd /usr/bin/
 #find / -name mkosi
 yum update -y
-#mkosi -C ${donde}/tests/mkosi_build/repo
+mkosi -C ${donde}/tests/mkosi_build/repo
