@@ -4,8 +4,8 @@ image_resource:
   type: docker-image
   source: {repository: 42bv/mkosi, privileged: true}
   
-  inputs:
-  - name: tests
+inputs:
+- name: tests
 
 run:
   path: tests/mkosi_build.sh
