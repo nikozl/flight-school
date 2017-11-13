@@ -7,5 +7,5 @@ donde=$(pwd)
 #cd /usr/bin/
 #find / -name mkosi
 cd /root/mkosi
-./mkosi --version
-./mkosi -C ${donde}/tests/mkosi_build/repo
+mkosi --version
+mkosi -C ${donde}/tests/mkosi_build/repo
