@@ -29,3 +29,6 @@ end
 
 *Ejecutar codigo
  fly -t ci execute -c build.yml
+
+*prune-worker
+fly -t example prune-worker --worker worker-name
