@@ -9,5 +9,6 @@ donde=$(pwd)
 cd /root/mkosi
 mkosi --version
 export
-yum install e2fsprogs -y
+dnf install -y e2fsprogs
+mknod /dev/loop1p1 b7 1
 mkosi -C ${donde}/tests/mkosi_build/repo
