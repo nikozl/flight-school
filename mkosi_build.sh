@@ -8,4 +8,5 @@ donde=$(pwd)
 #find / -name mkosi
 cd /root/mkosi
 mkosi --version
-mkosi -C ${donde}/tests/mkosi_build/repo
+export
+#mkosi -C ${donde}/tests/mkosi_build/repo
