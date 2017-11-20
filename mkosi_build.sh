@@ -10,7 +10,6 @@ cd /root/mkosi
 mkosi --version
 export
 dnf install -y e2fsprogs
+mknod /dev/loop1 b 7 1
 ls -l /dev/loop*
-mknod /dev/loop1p1 b 7 1
-ls -l /dev/loop*
-#mkosi -C ${donde}/tests/mkosi_build/repo
+mkosi -C ${donde}/tests/mkosi_build/repo
