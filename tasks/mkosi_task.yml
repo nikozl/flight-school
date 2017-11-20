@@ -1,9 +1,8 @@
-privileged: true
 platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: 42bv/mkosi}
+  source: {repository: 42bv/mkosi, privileged: true}
   
 inputs:
 - name: tests
