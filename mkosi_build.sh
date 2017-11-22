@@ -14,6 +14,6 @@ mknod /dev/loop1 b 7 1
 chown root:disk /dev/loop*
 chmod 660 /dev/loop*
 ls -l /dev/loop*
-
+cd /tmp/mkosi
 #mkosi
-mkosi -C ${donde}/tests/mkosi_build/repo
+./mkosi -C ${donde}/tests/mkosi_build/repo
