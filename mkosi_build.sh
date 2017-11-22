@@ -5,7 +5,7 @@ set -x
 ls -lrtha
 donde=$(pwd)
 #cd /usr/bin/
-#find / -name mkosi
+find / -name mkosi
 #cd /root/mkosi
 #mkosi --version
 #export
@@ -14,5 +14,6 @@ mknod /dev/loop1 b 7 1
 chown root:disk /dev/loop*
 chmod 660 /dev/loop*
 ls -l /dev/loop*
-mkosi
-#mkosi -C ${donde}/tests/mkosi_build/repo
+
+#mkosi
+mkosi -C ${donde}/tests/mkosi_build/repo
