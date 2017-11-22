@@ -15,5 +15,6 @@ chown root:disk /dev/loop*
 chmod 660 /dev/loop*
 ls -l /dev/loop*
 cd /tmp/mkosi
-#mkosi
-./mkosi -C ${donde}/tests/mkosi_build/repo
+mkosi 2> /tmp/error
+cat /tmp/error
+#./mkosi -C ${donde}/tests/mkosi_build/repo
