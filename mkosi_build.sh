@@ -11,4 +11,4 @@ chmod 660 /dev/loop*
 ls -l /dev/loop*
 chmod +x ${donde}/tests/mkosi_build/repo/mkosi.postinst
 #mkosi
-mkosi -C ${donde}/tests/mkosi_build/repo 2>/tmp/error
+mkosi -C ${donde}/tests/mkosi_build/repo
