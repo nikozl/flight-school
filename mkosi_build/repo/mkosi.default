@@ -5,7 +5,7 @@ Distribution=ubuntu
 Release=zesty
 
 [Output]
-Format=raw_gpt
+Format=tar
 Bootable=no
 Hostname=repo
 XZ=true
