@@ -6,7 +6,7 @@ image_resource:
       repository: hashicorp/packer
 
 inputs:
-- name: tests
+- name: resource-tests
 
 run:
   path: tests/packer-mkosi_build.sh
