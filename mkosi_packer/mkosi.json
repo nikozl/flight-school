@@ -16,7 +16,7 @@
        "qemuargs": [
 	 [ "-m", "{{ user `memory` }}"]
        ],
-      "headless": false
+      "headless": true
     }
   ],
   "provisioners": [
