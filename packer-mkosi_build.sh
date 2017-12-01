@@ -8,4 +8,4 @@ export https_proxy="http://16.0.96.20:3128"
 
 cd tests/mkosi_packer
 apk add --update qemu qemu-system-x86_64 qemu-img
-packer build --force mkosi.json
+PACKER_LOG=1 packer build --force mkosi.json
