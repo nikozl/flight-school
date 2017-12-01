@@ -1,5 +1,4 @@
 #!/bin/bash
 cd tests/mkosi_packer
-cat /etc/issue
-uname -a
-#packer build --force mkosi.json
+apk add --update qemu qemu-system-x86_64 qemu-img
+packer build --force mkosi.json
