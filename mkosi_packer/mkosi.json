@@ -13,9 +13,6 @@
       "ssh_username": "root",
       "ssh_password": "metrom",
       "ssh_wait_timeout": "10000s",
-       "qemuargs": [
-	 [ "-m", "{{ user `memory` }}"]
-       ],
       "headless": true
     }
   ],
@@ -60,7 +57,6 @@
   "variables": {
     "proxy": "{{ env `all_proxy` }}",
     "no_proxy": "{{ env `no_proxy` }}",
-    "format": "qcow2",
-    "memory": "2048"
+    "format": "qcow2"
   }
 }
