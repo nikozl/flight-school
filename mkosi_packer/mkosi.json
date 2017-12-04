@@ -38,7 +38,7 @@
     {
       "destination": "output-qemu/",
       "direction": "download",
-      "source": "/tmp/files/mkosi.output/",
+      "source": "/tmp/output/",
       "type":"file" 
     }
   ],
@@ -51,7 +51,7 @@
     },
     {
       "type": "artifice",
-      "files": [ "output-qemu/mkosi.output/repo.raw", "output-qemu/mkosi.output/repo.nspawn" ]
+      "files": [ "output-qemu/*"]
     }
   ],
   "variables": {
