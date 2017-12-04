@@ -8,6 +8,9 @@ image_resource:
 inputs:
 - name: tests
 
+outputs:
+- name: /tmp/files/output-qemu
+
 run:
   path: tests/packer-mkosi_build.sh
 
