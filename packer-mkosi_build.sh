@@ -13,4 +13,4 @@ apk add --update qemu qemu-system-x86_64 qemu-img
 #export http_proxy=""
 #export https_proxy=""
 
-PACKER_LOG=1 packer build --force mkosi.json
+packer build --force mkosi.json
