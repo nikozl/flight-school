@@ -8,8 +8,8 @@ cat generate_file_output/fileip.txt
 cat /etc/issue
 uname -a
 apt-get update -y
-#apt-get install openssh-client -y
-#apt-get insstall openssh-server -y
+apt-get install openssh-client -y
+apt-get insstall openssh-server -y
 apt-get install sshpass -y
 #apt-get install rsync -y
 #apt-get install git -y
