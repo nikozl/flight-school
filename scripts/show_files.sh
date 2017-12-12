@@ -1,4 +1,7 @@
 #! /bin/bash
+set -e
+set -x
+
 pwd
 ls -l
 ls -lrta generate_file_output
