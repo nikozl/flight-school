@@ -6,7 +6,7 @@ image_resource:
       repository: eeacms/scp-server
 
 inputs:
-- name: mkosi_packer/output-qemu
+- name: tests/mkosi_packer/output-qemu
 
 run:
   path: tests/packer-scp.sh
