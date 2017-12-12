@@ -10,7 +10,7 @@ inputs:
 
 outputs:
 - name: output-qemu
-- path: tests/mkosi_packer/output-qemu/
+- path: mkosi_packer/output-qemu/
 
 run:
   path: tests/packer-mkosi_build.sh
