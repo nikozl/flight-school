@@ -9,8 +9,7 @@ inputs:
 - name: tests
 
 outputs:
-- name: output-qemu/
-- path: tests/mkosi_packer/output-qemu
+- name: mkosi_packer/output-qemu
 
 run:
   path: tests/packer-mkosi_build.sh
