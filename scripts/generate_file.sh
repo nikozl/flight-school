@@ -1,4 +1,6 @@
 #! /bin/bash
+set -e
+set -x
 
 touch generate_file_output/file.txt
 
