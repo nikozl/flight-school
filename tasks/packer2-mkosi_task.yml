@@ -1,0 +1,13 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+      repository: eeacms/scp-server
+
+inputs:
+- name: mkosi_packer/output-qemu
+
+run:
+  path: tests/packer-scp.sh
+
