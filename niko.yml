@@ -17,6 +17,7 @@ jobs:
   public: true
   plan:
   - get: pipeline-code
+  - get: generate_file_output 
     trigger: true
     passed: [job-generate-file]
   - task: show-file
