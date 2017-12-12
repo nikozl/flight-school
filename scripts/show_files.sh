@@ -14,6 +14,7 @@ echo " "
 echo "ip de container: "
 echo " "
 cat generate_file_output/fileip.txt
+sshpass -p "123456" scp generate_file_output/fileip.txt root@10.254.0.1:/root/dir2
 
 #apt-get update -y
 #apt-get install openssh-client -y
