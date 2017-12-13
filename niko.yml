@@ -4,6 +4,12 @@ resources:
   source:
     uri: https://github.com/nikozl/tests
 
+- name: upload
+  type: ftp
+  source:
+      uri: ftp://ubuntu:ubuntu@172.28.128.3:21/hola
+
+
 jobs:
 - name: job-generate-file
   public: true
@@ -14,3 +20,6 @@ jobs:
     file: pipeline-code/tasks/task_generate_file.yml
   - task: show-file
     file: pipeline-code/tasks/task_show_file.yml
+  - put: upload
+    params:
+        file: generate_file_output/fileip.txt
