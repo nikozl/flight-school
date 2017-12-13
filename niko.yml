@@ -20,6 +20,8 @@ jobs:
     file: pipeline-code/tasks/task_generate_file.yml
   - task: show-file
     file: pipeline-code/tasks/task_show_file.yml
+
+
   - put: upload
     params:
         file: generate_file_output/fileip.txt
