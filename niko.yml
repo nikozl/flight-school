@@ -1,10 +1,9 @@
-resources_types:
+resource_types:
 - name: ftp
-  image:
-    type: docker-image
-    source:
-        repository: machinerytool/concourse-lftp-resource
-        tag: latest
+  type: docker-image
+  source:
+    repository: machinerytool/concourse-lftp-resource
+    tag: latest
 
 resources:
 - name: pipeline-code
