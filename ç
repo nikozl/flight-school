@@ -1,8 +1,10 @@
 resource_types:
-- name: ftp
-  type: docker-image
-  source:
-      repository: machinerytool/concourse-lftp-resource 
+#- name: ftp
+#  type: docker-image
+#  source:
+#    repository: machinerytool/concourse-lftp-resource 
+- image: docker:///aequitas/ftp-resource
+  type: ftp
 
 resources:
 - name: pipeline-code
