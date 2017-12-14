@@ -18,7 +18,7 @@ apt-get install sshpass -y
 #cat ${donde_estoy}
 #echo " "
 #echo "ejecutando rsync..."
-sshpass -p "123456" rsync -a -e "ssh -o StrictHostKeyChecking=no" generate_file_output/ root@10.254.0.9:/root/dir2
+sshpass -p "123456" rsync -a -e "ssh -o StrictHostKeyChecking=no" generate_file_output/ root@10.254.0.1:/root/dir2
 
 #echo " "
 
